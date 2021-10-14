@@ -219,7 +219,6 @@ PRODUCT_PACKAGES += \
     libvintf_jni \
     libvulkan \
     libwilhelm \
-    llkd \
     llndk_libs \
     lmkd \
     LocalTransport \
