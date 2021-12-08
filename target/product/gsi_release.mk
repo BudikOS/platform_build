@@ -53,8 +53,7 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 # GSI specific tasks on boot
 PRODUCT_PACKAGES += \
     gsi_skip_mount.cfg \
-    init.gsi.rc \
-    init.vndk-nodef.rc \
+    init.gsi.rc
 
 # Add all system_ext packages used to support older/upgrading devices that have
 # PRODUCT_SHIPPING_API_LEVEL 34 or older.
