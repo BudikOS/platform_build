@@ -122,12 +122,10 @@ android_filesystem_defaults {
         ///////////////////////////////////////////
         // gsi_product
         ///////////////////////////////////////////
-        "Browser2",
-        "Camera2",
         "Dialer",
         "LatinIME",
-        "messaging",
-        "apns-full-conf.xml",
+        "Messaging",
+        "TrichromeChrome",
         "frameworks-base-overlays",
         "preinstalled-packages-base-product.xml",
 
@@ -193,13 +191,12 @@ android_system_image {
         "preinstalled-packages-platform-telephony-system-ext.xml",
 
         // handheld_product
-        "Calendar",
         "Contacts",
         "DeskClock",
         "Gallery2",
+        "LiveWallpapersPicker",
         "Music",
         "preinstalled-packages-platform-handheld-product.xml",
-        "QuickSearchBox",
         "SettingsIntelligence",
         "frameworks-base-overlays",
 

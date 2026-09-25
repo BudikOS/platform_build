@@ -426,7 +426,7 @@ android_filesystem_defaults {
         ///////////////////////////////////////////
         // media_product
         ///////////////////////////////////////////
-        "webview",
+        "TrichromeWebView",
         "preinstalled-packages-media-product.xml",
         ///////////////////////////////////////////
         // base_product
@@ -858,7 +858,6 @@ system_image_defaults {
                 "ManagedProvisioning", // handheld_system
                 "MmsService", // handheld_system
                 "MtpService", // handheld_system
-                "MusicFX", // handheld_system
                 "NetworkStack", // base_system
                 "ONS", // telephony_system
                 "PacProcessor", // handheld_system

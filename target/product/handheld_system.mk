@@ -47,21 +47,17 @@ PRODUCT_PACKAGES += \
     CertInstaller \
     CredentialManager \
     DeviceAsWebcam \
-    DeviceDiagnostics \
     DocumentsUI \
     DownloadProviderUi \
-    EasterEgg \
     ExternalStorageProvider \
     FusedLocation \
     GmsCompat \
     InputDevices \
     KeyChain \
     librs_jni \
-    LogViewer \
     ManagedProvisioning \
     MmsService \
     MtpService \
-    MusicFX \
     NetworkLocation \
     PacProcessor \
     preinstalled-packages-platform-handheld-system.xml \

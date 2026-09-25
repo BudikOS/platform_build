@@ -238,8 +238,6 @@ PRODUCT_PACKAGES += \
     mm_daemon \
     mm_daemon_setup \
     monkey \
-    misctrl \
-    mtectrl \
     ndc \
     netd \
     NetworkStack \
@@ -614,7 +612,6 @@ PRODUCT_PACKAGES_DEBUG := \
     unwind_info \
     unwind_reg_info \
     unwind_symbols \
-    HardeningTestApp \
     SecurePasteTestSystemApp \
 
 # The set of packages whose code can be loaded by the system server.
