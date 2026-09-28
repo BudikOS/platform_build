@@ -74,6 +74,60 @@ gsi_symlinks = [
     },
 ]
 
+// compat symlinks for legacy vendor partitions: pre-q vendor ld.config.txt files
+// hardcode /system/${LIB}/vndk-${VER} and vndk-sp-${VER} search paths. point them
+// into the matching vndk apex so those paths keep resolving on old devices.
+vndk_compat_symlinks = [
+    {
+        target: "/apex/com.android.vndk.v28/lib",
+        name: "lib/vndk-28",
+    },
+    {
+        target: "/apex/com.android.vndk.v28/lib64",
+        name: "lib64/vndk-28",
+    },
+    {
+        target: "/apex/com.android.vndk.v28/lib",
+        name: "lib/vndk-sp-28",
+    },
+    {
+        target: "/apex/com.android.vndk.v28/lib64",
+        name: "lib64/vndk-sp-28",
+    },
+    {
+        target: "/apex/com.android.vndk.v29/lib",
+        name: "lib/vndk-29",
+    },
+    {
+        target: "/apex/com.android.vndk.v29/lib64",
+        name: "lib64/vndk-29",
+    },
+    {
+        target: "/apex/com.android.vndk.v29/lib",
+        name: "lib/vndk-sp-29",
+    },
+    {
+        target: "/apex/com.android.vndk.v29/lib64",
+        name: "lib64/vndk-sp-29",
+    },
+    {
+        target: "/apex/com.android.vndk.v30/lib",
+        name: "lib/vndk-30",
+    },
+    {
+        target: "/apex/com.android.vndk.v30/lib64",
+        name: "lib64/vndk-30",
+    },
+    {
+        target: "/apex/com.android.vndk.v30/lib",
+        name: "lib/vndk-sp-30",
+    },
+    {
+        target: "/apex/com.android.vndk.v30/lib64",
+        name: "lib64/vndk-sp-30",
+    },
+]
+
 android_filesystem_defaults {
     name: "android_gsi_defaults",
     defaults: [
@@ -81,7 +135,7 @@ android_filesystem_defaults {
         "system_ext_image_defaults",
         "product_image_defaults",
     ],
-    symlinks: gsi_symlinks,
+    symlinks: gsi_symlinks + vndk_compat_symlinks,
     dirs: ["cache"],
     deps: [
         ///////////////////////////////////////////

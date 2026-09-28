@@ -24,18 +24,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 PRODUCT_PACKAGES += \
     AppStore \
     Contacts \
-    DeskClock \
-    ExactCalculator \
-    Gallery2 \
     LatinIME \
-    Music \
     preinstalled-packages-platform-handheld-product.xml \
     SettingsIntelligence \
     SpeechServices \
     talkback \
     ThemePicker \
     ThemesStub \
-    TrichromeChrome \
     frameworks-base-overlays
 
 PRODUCT_PACKAGES_DEBUG += \

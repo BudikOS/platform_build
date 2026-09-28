@@ -86,7 +86,6 @@ PRODUCT_PACKAGES += \
     $(RELEASE_PACKAGE_TZDATA_MODULE) \
     com.android.uprobestats \
     com.android.uwb \
-    com.android.virt \
     com.android.wifi \
     ContactsProvider \
     content \
