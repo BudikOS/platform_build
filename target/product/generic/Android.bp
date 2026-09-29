@@ -1021,8 +1021,6 @@ system_image_defaults {
         },
         lib64: {
             deps: [
-                "android.system.virtualizationcommon-ndk",
-                "android.system.virtualizationservice-ndk",
                 "libgsi",
                 "servicemanager",
             ],

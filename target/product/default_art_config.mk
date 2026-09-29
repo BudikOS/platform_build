@@ -220,10 +220,6 @@ ifeq ($(RELEASE_TELECOM_MAINLINE_MODULE),true)
 
 endif
 
-ifeq ($(RELEASE_AVF_ENABLE_LLPVM_CHANGES),true)
-  PRODUCT_APEX_SYSTEM_SERVER_JARS += com.android.virt:service-virtualization
-endif
-
 # List of jars on the platform that system_server loads dynamically using separate classloaders.
 # Keep the list sorted library names.
 PRODUCT_STANDALONE_SYSTEM_SERVER_JARS := \
