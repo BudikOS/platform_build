@@ -541,6 +541,8 @@ endif
 ifdef OVERRIDE_PRODUCT_EXTRA_VNDK_VERSIONS
   PRODUCT_EXTRA_VNDK_VERSIONS := $(OVERRIDE_PRODUCT_EXTRA_VNDK_VERSIONS)
 endif
+# Budik OS: vendor >= 35 has no VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS :=
 
 ###########################################
 # PRODUCT_COMPRESSED_APEX: Use compressed apexes in pre-installed partitions.
